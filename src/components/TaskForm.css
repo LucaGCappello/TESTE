@@ -1,0 +1,59 @@
+.app_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dcbcdc;
+}
+
+
+.app_header > form /*> form is a child combinator (>), 
+meaning it only selects form elements that are direct children of .app_header*/ {
+   width: 40%;
+}
+
+.task_input{
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #f9f9f9;
+    color:black;
+    border: 1px solid #dfe3e6;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    width: 100%;
+
+}
+
+.task_input::placeholder{
+    color: #686868;
+}
+
+.taskbottomline {
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.task_status{
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #999;
+    width: 120px;
+    height: 40px;
+    padding: 0 5px;
+}
+
+
+.task_submit{
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #6457f9;
+     color: #dcbcdc;
+     border-radius: 5px;
+     height: 40px;
+     padding: 3px 13px;
+     margin-left: 10px;
+     border: none;
+     cursor: pointer;
+}
